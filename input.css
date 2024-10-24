@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  font-family: "MiSans VF", MiSans, system-ui, sans-serif;
-} */
-
 .navbar-menu:checked ~ label .navbar-menu\:rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(180deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -18,7 +14,7 @@
   overflow: hidden; /* 防止内容溢出 */
   opacity: 0; /* 初始透明度为 0 */
 }
-
+ 
 .navbar-menu\:block.visible {
   height: calc(100vh - 64px); /* 目标高度 */
   opacity: 1; /* 完全不透明 */
