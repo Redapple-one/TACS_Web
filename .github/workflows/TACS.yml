@@ -1,7 +1,7 @@
 on: 
   push:
     branches: 
-      - main
+      - redirect
 permissions: 
   contents: write
 
@@ -29,5 +29,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: deploy
+          branch: deploy_redirect
           folder: src
