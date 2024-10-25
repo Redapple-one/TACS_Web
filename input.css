@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For 2K & 4K resolutions */
+@media screen and (min-width: 2048px){
+    .content{
+      zoom:1.5;
+    }
+  }
+  @media screen and (min-width: 3840px){
+    .content{
+      zoom: 2;
+    }
+  }
