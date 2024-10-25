@@ -10,6 +10,7 @@
   },
   "scripts": {
     "dev": "sudo npx postcss ./src/input.css -o ./src/output.css -w",
+    "dev-win": "npx postcss ./src/input.css -o ./src/output.css -w",
     "build": "sudo npx postcss ./src/input.css -o ./src/output.css"
   }
 }
