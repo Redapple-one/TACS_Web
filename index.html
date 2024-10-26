@@ -14,7 +14,7 @@
 </head>
 <body class="font-systemui overflow-x-hidden">
   <!-- 导航栏 -->
-  <nav class="backdrop-blur-xl fixed w-full z-50 bg-[#1f2937]/75 desktop-navbar hidden md:block">
+  <nav class="backdrop-blur-xl fixed w-full z-50 bg-[#1f2937]/75 desktop-navbar hidden sm:block">
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-12">
       <div class="relative flex h-16 items-center justify-between">
         <div class="flex flex-1 items-center justify-center sm:justify-start">
@@ -26,19 +26,16 @@
                 <a href="" class="relative block rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white ml-4 text-nowrap select-none">首页</a>
               </li>
               <li>
-                <a href="https://wiki.tacserver.top/wiki/%E9%A6%96%E9%A1%B5" class="relative block rounded-md px-3 py-2 text-sm font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">文档</a>
-              </li>
-              <li>
                 <a href="https://online.tacserver.top/status/tacs" class="relative block rounded-md px-3 py-2 text-sm font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">在线状态</a>
               </li>
               <li>
-                <a href="https://todo.tacserver.top/" class="relative block rounded-md px-3 py-2 text-sm font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">TACS ToDoList</a>
+                <a href="https://wiki.tacserver.top/wiki/%E9%A6%96%E9%A1%B5" class="relative block rounded-md px-3 py-2 text-sm font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">TACS百科</a>
               </li>
               <li>
                 <a href="https://music.tacserver.top/" class="relative block rounded-md px-3 py-2 text-sm font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">TACS音乐</a>
               </li>
               <li>
-                <a href="https://wiki.tacserver.top/wiki/%E9%A6%96%E9%A1%B5" class="relative block rounded-md px-3 py-2 text-sm font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">TACS百科</a>
+                <a href="https://todo.tacserver.top/" class="relative block rounded-md px-3 py-2 text-sm font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">TACS ToDoList</a>
               </li>
             </ul>
           </div>
@@ -47,7 +44,7 @@
     </nav>
 
   <!-- 移动端导航栏 -->
-  <nav class="backdrop-blur-2xl fixed w-full z-50 bg-[#1f2937]/75 mobile-navbar block md:hidden">
+  <nav class="backdrop-blur-2xl fixed w-full z-50 bg-[#1f2937]/75 mobile-navbar block sm:hidden">
     <div class="mx-auto px-6">
       <div class="relative flex h-16 items-center justify-between">
         <div class="flex flex-1 items-center justify-between">
@@ -57,7 +54,7 @@
           <input class="navbar-menu hidden" type="checkbox" value="selected" id="menu">
           <h2 class="text-white text-2xl font-semibold text-center">TAC-Server</h2>
           <label for="menu">
-            <img src="./images/menu_arrow.svg" class="size-12 rotate-0 navbar-menu:rotate-180 transition duration-200 ease-in-out" alt="下拉箭头">
+            <img src="./images/menu_arrow.svg" class="size-12 rotate-0 navbar-menu-arrow transition duration-200 ease-in-out" alt="下拉箭头">
           </label>
         </div>
       </div>
@@ -68,19 +65,16 @@
          <a href="" class="relative block rounded-md bg-gray-900 px-3 py-2 text-2xl font-medium text-white text-nowrap select-none">首页</a>
         </li>
         <li>
-          <a href="https://wiki.tacserver.top/wiki/%E9%A6%96%E9%A1%B5" class="relative block rounded-md px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto text-nowrap select-none">文档</a>
-        </li>
-        <li>
           <a href="https://online.tacserver.top/status/tacs" class="relative block rounded-md px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto text-nowrap select-none">在线状态</a>
         </li>
         <li>
-          <a href="https://todo.tacserver.top/" class="relative block rounded-md px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto text-nowrap select-none">TACS ToDoList</a>
+          <a href="https://wiki.tacserver.top/wiki/%E9%A6%96%E9%A1%B5" class="relative block rounded-md px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto text-nowrap select-none">TACS百科</a>
         </li>
         <li>
           <a href="https://music.tacserver.top/" class="relative block rounded-md px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto text-nowrap select-none">TACS音乐</a>
         </li>
         <li>
-          <a href="https://wiki.tacserver.top/wiki/%E9%A6%96%E9%A1%B5" class="relative block rounded-md px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto text-nowrap select-none">TACS百科</a>
+          <a href="https://todo.tacserver.top/" class="relative block rounded-md px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto text-nowrap select-none">TACS ToDoList</a>
         </li>
       </ul>
     </div>
@@ -91,7 +85,7 @@
     class="flex items-center justify-center h-screen sm:bg-[url('https://img.fastmirror.net/s/2024/10/20/6714d0d5256c4.png')] bg-[url('https://img.fastmirror.net/s/2024/10/22/6717a9e2e2123.jpg')] bg-center bg-cover bg-fixed">
 
       <div
-        class="max-h-[65vh] rounded-3xl border-[#292929] border-2 backdrop-blur-xl shadow-none backdrop-brightness-75 transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-800 lg:rounded-full p-6 sm:p-12 md:p-14 lg:p-16 lg:px-32 m-4 sm:m-8">
+        class="max-h-[65vh] rounded-3xl border-[#1f2937]/75 border-[1px] backdrop-blur-xl shadow-none backdrop-brightness-75 transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-800 lg:rounded-full p-6 sm:p-12 md:p-14 lg:p-16 lg:px-32 m-4 sm:m-8">
         <h1
           class="bg-gradient-to-br from-[#ffdf42] to-[#ff8c09] bg-clip-text text-center text-7xl font-extrabold text-transparent">
           TAC-Server
