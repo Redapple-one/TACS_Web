@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `)
     const menuToggle = document.querySelector('input.navbar-menu');
     const navbarMenuBlock = document.querySelector('.navbar-menu\\:block');
+    const navbarNavbar = document.querySelector('.navbar-menu\\:nav');
     const mobileNavbar = document.querySelector('.mobile-navbar');
     let isMobileNavbarVisible = false;
     let isMenuVisible = false;
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const shouldShow = menuToggle.checked;
             if (shouldShow !== isMenuVisible) {
                 navbarMenuBlock.classList.toggle('visible', shouldShow);
+                navbarNavbar.classList.toggle('visible', shouldShow);
                 isMenuVisible = shouldShow;
             }
         }
