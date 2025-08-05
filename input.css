@@ -44,6 +44,34 @@ html{
 
 .grid-images{
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+}
+
+@media (min-width: 640px) {
+  .grid-images {
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-images {
+    grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-images {
+    grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+  }
+}
+
+/* iPad 特定优化 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar-menu\:block.visible {
+    height: calc(100vh - 4rem);
+    background-color: rgba(30, 41, 57, 0.95);
+    backdrop-filter: blur(12px);
+  }
 }
