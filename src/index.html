@@ -14,12 +14,12 @@
 </head>
 
 <body class="overflow-x-hidden bg-[images/bg1.jpg] bg-repeat">
-  <!-- 导航栏 -->
+  <!-- 桌面端导航栏 -->
   <nav
-    class="backdrop-blur-xl fixed w-full z-50 bg-black/10 hover:bg-[#1e2939] transition desktop-navbar sm:block hidden">
-    <div class="mx-auto max-w-7xl sm:px-6 lg:px-12">
+    class="backdrop-blur-xl fixed w-full z-50 bg-black/10 hover:bg-[#1e2939] transition desktop-navbar hidden md:block">
+    <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-12">
       <div class="relative flex h-16 items-center justify-between">
-        <div class="flex flex-1 items-center justify-center sm:justify-start">
+        <div class="flex flex-1 items-center justify-center md:justify-start">
           <div class="flex flex-shrink-0 items-center">
             <img class="size-12 my-auto" src="icons/tacs.svg" alt="TACS Logo" importance="high" loading="lazy">
           </div>
@@ -47,67 +47,67 @@
     </div>
   </nav>
 
-  <!-- 移动端导航栏 -->
-  <nav class="backdrop-blur-2xl fixed w-full z-50 bg-black/10 mobile-navbar block sm:hidden">
-    <div class="mx-auto px-6 navbar-menu:nav transition-all duration-200 ease-in-out">
+  <!-- 移动端/iPad导航栏 -->
+  <nav class="backdrop-blur-2xl fixed w-full z-50 bg-black/10 mobile-navbar block md:hidden">
+    <div class="mx-auto px-4 sm:px-6 navbar-menu:nav transition-all duration-200 ease-in-out">
       <div class="relative flex h-16 items-center justify-between">
         <div class="flex flex-1 items-center justify-between">
           <div class="flex flex-shrink-0 items-center">
-            <img class="size-12 my-auto" src="icons/tacs.svg" alt="TACS Logo" importance="high" loading="lazy">
+            <img class="size-10 sm:size-12 my-auto" src="icons/tacs.svg" alt="TACS Logo" importance="high" loading="lazy">
           </div>
           <input class="navbar-menu hidden" type="checkbox" value="selected" id="menu">
-          <h2 class="text-white text-2xl font-semibold text-center">TAC-Server</h2>
-          <label for="menu">
+          <h2 class="text-white text-lg sm:text-2xl font-semibold text-center">TAC-Server</h2>
+          <label for="menu" class="cursor-pointer">
             <img src="icons/menu_arrow.svg"
-              class="size-12 rotate-0 navbar-menu-arrow transition duration-200 ease-in-out" alt="下拉箭头">
+              class="size-10 sm:size-12 rotate-0 navbar-menu-arrow transition duration-200 ease-in-out" alt="下拉箭头">
           </label>
         </div>
       </div>
     </div>
     <div class="navbar-menu:block transition-all duration-200 ease-in-out">
-      <ul class="flex flex-col gap-4 m-6">
+      <ul class="flex flex-col gap-3 sm:gap-4 m-4 sm:m-6">
         <li>
           <p
-            class="relative block rounded-2xl bg-[#101828]/75 px-3 py-2 text-2xl font-medium text-white text-nowrap select-none">
+            class="relative block rounded-2xl bg-[#101828]/75 px-4 py-3 text-lg sm:text-2xl font-medium text-white text-nowrap select-none">
             首页</p>
         </li>
         <li>
           <a href="https://status.tacserver.cn"
-            class="block rounded-2xl px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 my-auto text-nowrap select-none">在线状态</a>
+            class="block rounded-2xl px-4 py-3 text-lg sm:text-2xl font-medium text-white transition ease-out hover:bg-gray-700 my-auto text-nowrap select-none">在线状态</a>
         </li>
         <li>
           <a href="https://docs.tacserver.cn"
-            class="block rounded-2xl px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 my-auto text-nowrap select-none">TACS文档</a>
+            class="block rounded-2xl px-4 py-3 text-lg sm:text-2xl font-medium text-white transition ease-out hover:bg-gray-700 my-auto text-nowrap select-none">TACS文档</a>
         </li>
         <li>
           <a href="https://music.tacserver.cn"
-            class="block rounded-2xl px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 my-auto text-nowrap select-none">TACS音乐</a>
+            class="block rounded-2xl px-4 py-3 text-lg sm:text-2xl font-medium text-white transition ease-out hover:bg-gray-700 my-auto text-nowrap select-none">TACS音乐</a>
         </li>
       </ul>
     </div>
   </nav>
 
 
-  <section class="flex items-end justify-center h-[100dvh] bg-[url('images/bg.svg')] bg-fixed bg-center bg-cover">
+  <section class="flex items-end justify-center h-[100dvh] bg-[url('images/bg.svg')] bg-fixed bg-center bg-cover px-4">
     <a href="https://qm.qq.com/cgi-bin/qm/qr?k=N6I2jmwHnnmTADo8ASpQXT4yudZzMUS3&jump_from=webapi&authKey=7VJvkzCOdkRpbc8KzcOmucP4GyhsgiqRxS33YEMbv8YbGlRljwFRXDmMuyj1vghF"
       target="_blank"
-      class="block p-2 px-6 w-auto rounded-full bg-[#0068b5] text-white text-lg hover:shadow-card hover:shadow-[#0068b5] transition text-nowrap mb-8"
+      class="block p-3 px-6 sm:px-8 w-auto rounded-full bg-[#0068b5] text-white text-base sm:text-lg hover:shadow-card hover:shadow-[#0068b5] transition text-nowrap mb-8 font-medium"
       rel="noopener norefferrer">加入玩家交流群</a>
   </section>
 
 
-  <section class="max-w-[1440px] mx-auto p-10">
+  <section class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-6 sm:py-10">
 
-    <section class="mx-auto max-w-max">
-      <h1 class="text-4xl font-medium text-white py-8">
+    <section class="mx-auto max-w-4xl">
+      <h1 class="text-2xl sm:text-3xl lg:text-4xl font-medium text-white py-6 sm:py-8">
         介绍
       </h1>
-      <p class="text-lg text-gray-400 leading-relaxed"><span class="text-white text-2xl font-semibold">TACS</span>, 中文名为茶水晶服务器, 全称Tea Amethyst Craft Server.<br>
-        服务器于2023年暑假开服, 当前版本为<span class="bg-[#0068b5] rounded-md text-white p-0.5">Fabric 1.21.3</span>, 首任服主为鱼不当(yubudangmc), 第二任服主为红苹果(Redapple_one)<br>
-        目前服务器运行在物理机上, 由<span class="bg-[#0068b5] rounded-md text-white p-0.5">Intel® Core™ i5-13600K</span>强力驱动, 配备了<span class="bg-[#0068b5] rounded-md text-white p-0.5">64G 3200Mhz</span>的内存, 使用风冷(2000转*5把)散热<br>
+      <p class="text-base sm:text-lg text-gray-400 leading-relaxed"><span class="text-white text-xl sm:text-2xl font-semibold">TACS</span>, 中文名为茶水晶服务器, 全称Tea Amethyst Craft Server.<br>
+        服务器于2023年暑假开服, 当前版本为<span class="bg-[#0068b5] rounded-md text-white px-1.5 py-0.5 text-sm sm:text-base">Fabric 1.21.3</span>, 首任服主为鱼不当(yubudangmc), 第二任服主为红苹果(Redapple_one)<br>
+        目前服务器运行在物理机上, 由<span class="bg-[#0068b5] rounded-md text-white px-1.5 py-0.5 text-sm sm:text-base">Intel® Core™ i5-13600K</span>强力驱动, 配备了<span class="bg-[#0068b5] rounded-md text-white px-1.5 py-0.5 text-sm sm:text-base">64G 3200Mhz</span>的内存, 使用风冷(2000转*5把)散热<br>
         自动备份软件(Duplicati)每十二小时将存档自动备份到阿里云盘上, 数据有保障</p>
 
-      <h1 class="text-4xl font-medium text-white py-8">
+      <h1 class="text-2xl sm:text-3xl lg:text-4xl font-medium text-white py-6 sm:py-8">
         回放录制<span class="text-red-500">􀜪</span>(暂时停用)
       </h1>
       <p class="text-lg text-gray-400 leading-relaxed"><span class="line-through">看不了死亡回放?</span> 因客户端没有开启Replay而未录下精彩时刻? 别担心, 现在有服务端帮你录<br>
@@ -144,11 +144,11 @@
     </section>
 
     <section class="mx-auto">
-      <h1 class="text-4xl font-medium text-white py-8">
+      <h1 class="text-2xl sm:text-3xl lg:text-4xl font-medium text-white py-6 sm:py-8">
         服务器宣传片
       </h1>
-      <div class="flex sm:flex-row flex-col justify-center items-center gap-6">
-        <a class="text-white hover:underline rounded-2xl relative hover:scale-105 transition ease-out hover:shadow-[#2d446e] hover:shadow-origin"
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
+        <a class="text-white hover:underline rounded-2xl relative hover:scale-105 transition ease-out hover:shadow-[#2d446e] hover:shadow-origin w-full max-w-sm sm:max-w-none sm:w-auto"
           href="https://www.bilibili.com/video/BV1XhtxeREND" target="_blank" aria-label="宣传视频2">
           <img class="rounded-[inherit]" src="images/cover2.webp" alt="">
           <img class="absolute bottom-1 right-1 p-1 rounded-full bg-black/30 pointer-events-none" width="32"
@@ -185,33 +185,32 @@
       </div>
     </section>
     <section>
-      <div class="m-8 mx-auto w-full lg:max-w-max border-[#1e2029] border-2 bg-[#1a1c23] p-8 lg:px-32 rounded-xl">
-        <h1 class="text-center text-4xl font-bold text-[#ffbb1b]">加入玩家交流群</h1>
-        <p class="py-4 text-center text-white text-lg">
+      <div class="m-4 sm:m-6 lg:m-8 mx-auto w-full lg:max-w-max border-[#1e2029] border-2 bg-[#1a1c23] p-6 sm:p-8 lg:px-32 rounded-xl">
+        <h1 class="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-[#ffbb1b]">加入玩家交流群</h1>
+        <p class="py-4 text-center text-white text-base sm:text-lg">
           加入玩家交流群以获取最新信息, 还能跟群友吹水, 岂不美哉?
         </p>
         <a href="https://qm.qq.com/cgi-bin/qm/qr?k=N6I2jmwHnnmTADo8ASpQXT4yudZzMUS3&jump_from=webapi&authKey=7VJvkzCOdkRpbc8KzcOmucP4GyhsgiqRxS33YEMbv8YbGlRljwFRXDmMuyj1vghF"
           target="_blank" rel="noopener norefferrer"
-          class="mx-auto max-w-max block rounded-2xl bg-blue-600 px-6 py-2 text-center text-lg text-white transition ease-out hover:shadow-card hover:shadow-blue-500">加入玩家交流群</a>
+          class="mx-auto max-w-max block rounded-2xl bg-blue-600 px-6 py-3 text-center text-base sm:text-lg text-white transition ease-out hover:shadow-card hover:shadow-blue-500 font-medium">加入玩家交流群</a>
       </div>
     </section>
   </section>
 
   <footer>
     <div
-      class="bg-dark-75 flex h-full w-full flex-row items-center justify-between border-t-2 border-gray-800 p-5 text-white">
-      <header class="flex w-full flex-col gap-3 sm:w-[60%]">
-        <img src="icons/tacs.svg" class="size-16" alt="TACS Logo" importance="high" loading="lazy">
-        <p class="text-sm">
+      class="bg-dark-75 flex h-full w-full flex-col sm:flex-row items-center justify-between border-t-2 border-gray-800 p-4 sm:p-5 text-white gap-4 sm:gap-0">
+      <header class="flex w-full flex-col gap-3 sm:w-[60%] items-center sm:items-start">
+        <img src="icons/tacs.svg" class="size-12 sm:size-16" alt="TACS Logo" importance="high" loading="lazy">
+        <p class="text-xs sm:text-sm text-center sm:text-left">
           Copyright © 2025 TACS. All rights reserved.
         </p>
       </header>
-      <nav class="text-link flex flex-col items-end gap-1 self-end">
-        <a href="https://github.com/Redapple-one/TACS_Web">GitHub</a>
-        <a
-          href="https://qm.qq.com/cgi-bin/qm/qr?k=N6I2jmwHnnmTADo8ASpQXT4yudZzMUS3&jump_from=webapi&authKey=7VJvkzCOdkRpbc8KzcOmucP4GyhsgiqRxS33YEMbv8YbGlRljwFRXDmMuyj1vghF">QQ</a>
-        <a href="https://www.chmlfrp.cn">ChmlFRP</a>
-        <a href="https://space.bilibili.com/1546229901">Bilibili</a>
+      <nav class="text-link flex flex-row sm:flex-col items-center sm:items-end gap-4 sm:gap-1 self-center sm:self-end">
+        <a href="https://github.com/Redapple-one/TACS_Web" class="text-sm hover:text-blue-400 transition">GitHub</a>
+        <a href="https://qm.qq.com/cgi-bin/qm/qr?k=N6I2jmwHnnmTADo8ASpQXT4yudZzMUS3&jump_from=webapi&authKey=7VJvkzCOdkRpbc8KzcOmucP4GyhsgiqRxS33YEMbv8YbGlRljwFRXDmMuyj1vghF" class="text-sm hover:text-blue-400 transition">QQ</a>
+        <a href="https://www.chmlfrp.cn" class="text-sm hover:text-blue-400 transition">ChmlFRP</a>
+        <a href="https://space.bilibili.com/1546229901" class="text-sm hover:text-blue-400 transition">Bilibili</a>
       </nav>
     </div>
   </footer>

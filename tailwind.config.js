@@ -26,5 +26,5 @@ module.exports = {
       handwritten:  ['Segoe Print', 'Bradley Hand', 'Chilanka', 'TSCu_Comic', 'casual', 'cursive'],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
