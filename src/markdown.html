@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="./output.css" />
 </head>
 <body class="bg-[images/bg1.jpg] bg-repeat">
-  <nav class="backdrop-blur-xl fixed w-full z-50 bg-black/10 hover:bg-[#1e2939] transition desktop-navbar sm:block hidden">
-    <div class="mx-auto max-w-7xl sm:px-6 lg:px-12 flex h-16 items-center gap-4">
-      <img class="size-12 my-auto" src="icons/tacs.svg" alt="TACS Logo" loading="lazy" />
-      <p class="text-white text-xl">Docs 文档</p>
+  <nav class="backdrop-blur-xl fixed w-full z-50 bg-black/10 hover:bg-[#1e2939] transition">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12 flex h-16 items-center gap-4">
+      <img class="size-10 sm:size-12 my-auto" src="icons/tacs.svg" alt="TACS Logo" loading="lazy" />
+      <p class="text-white text-lg sm:text-xl">Docs 文档</p>
     </div>
   </nav>
-  <main class="pt-20 p-6 mx-auto max-w-3xl prose prose-invert" id="markdown-target"></main>
+  <main class="pt-20 p-4 sm:p-6 mx-auto max-w-none sm:max-w-3xl prose prose-invert prose-sm sm:prose-base" id="markdown-target"></main>
   <script src="marked.min.js"></script>
   <script src="renderMarkdown.js"></script>
 </body>
