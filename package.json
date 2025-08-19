@@ -11,8 +11,7 @@
     "tailwindcss": "^3.4.14"
   },
   "scripts": {
-    "dev": "sudo npx postcss ./src/input.css -o ./src/output.css -w",
-    "dev-win": "npx postcss ./src/input.css -o ./src/output.css -w",
-    "build": "sudo npx postcss ./src/input.css -o ./src/output.css"
+    "dev": "npx postcss ./src/input.css -o ./src/output.css -w",
+    "build": "npx postcss ./src/input.css -o ./src/output.css"
   }
 }
