@@ -4,8 +4,9 @@
 
 @font-face {
   font-family: SF Pro Icons;
-  src: url(https://vip.123pan.cn/1816905262/TACS%E5%AE%98%E7%BD%91/sf-pro-icons_regular.woff2);
+  src: url(https://tacs.cn-nb1.rains3.com/TACS_Web/sf-pro-icons_regular.woff2);
 }
+
 /* font */
 html{
   font-family: "SF Pro Icons", "MiSans VF", "MiSans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
